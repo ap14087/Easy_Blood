@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activites.MakeRequest">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Write a heart felt message and add an image for the community, somebody will defintely help you if possible"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="18dp"
+            android:textColor="@color/black"/>
+
+        <FrameLayout
+            android:layout_margin="8dp"
+            android:background="@drawable/border_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/message"
+            android:textSize="18sp"
+            android:minLines="6"
+            android:maxLines="10"
+            android:hint="Message"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:background="@null"
+            android:textColorHint="@color/black"
+            android:gravity="top"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/post_image"
+                android:padding="8dp"
+                android:src="@drawable/ic_baseline_image_24"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+            <TextView
+                android:id="@+id/choose_text"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:text="@string/choose_image"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/purple_500"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:text="Post Request"
+            android:textSize="18sp"
+            android:background="@drawable/button_bg"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
